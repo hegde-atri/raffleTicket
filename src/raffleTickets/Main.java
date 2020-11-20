@@ -72,7 +72,7 @@ public class Main {
             if(userRaffle.contains(userName)){      //checks if userRaffle has userName
                 System.out.println("Your raffle has been found!");
                 System.out.println(userRaffle);
-                String raffleString = String.valueOf(userRaffle.charAt(userRaffle.length()-2)) + String.valueOf(userRaffle.charAt(userRaffle.length()-1)); //pulls out the last 2 char of userRaffle as a String
+                String raffleString = String.valueOf(userRaffle.charAt(userRaffle.length() - 2)) + (userRaffle.charAt(userRaffle.length() - 1)); //pulls out the last 2 char of userRaffle as a String
                 //System.out.println(raffleString);
                 int raffleInt = Integer.parseInt(raffleString); //converts String to int
                 //System.out.println(raffleInt);
