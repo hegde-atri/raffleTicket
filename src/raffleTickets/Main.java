@@ -2,11 +2,8 @@ package raffleTickets;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.nio.Buffer;
 import java.util.Random;
-import java.io.OutputStream;
-import java.io.BufferedReader;
-import java.io.FileOutputStream;
+
 
 public class Main {
 
@@ -25,15 +22,9 @@ public class Main {
                 int menuSelection = Integer.parseInt(reader1.readLine());
 
                 switch (menuSelection) {
-                    case (1):
-                        buyTicket();
-                        break;
-                    case (2):
-                        verifyRaffle();
-                        break;
-                    default:
-                        System.out.println("Please enter a valid input !");
-                        break;
+                    case (1) -> buyTicket();
+                    case (2) -> verifyRaffle();
+                    default -> System.out.println("Please enter a valid input !");
                 }
 
             } catch (Exception e) {
